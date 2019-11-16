@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>IEEE ・ About Us</title>
+</head>
+<body>
+	<header>
+		<section>
+			<a href="index.html">
+				<img src="images/logo.png" alt="IEEE logo">
+			</a>
+		</section>
+
+		<h1>Contact US</h1>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="history.html">About IEEE</a>
+				</li>
+				<li>
+					<a href="ur.html">UofR Chapter</a>
+				</li>
+				<li>
+					<a href="rochester.html">Rochester Section</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+			</ul>	
+		</nav>	
+	</header>
+
+	<figure class = "box1">
+			<img src="images/ieee-experience.jpg" alt="IEEE header picture">
+	</figure>
+
+	<form method="post" action="form-processor.php">
+
+		<label for="name">Name</label>
+		<br>
+		<input type="text" name="name" id="name">
+		<br>
+		<br>
+		<label for="email">Email</label>
+		<br>
+		<input type="email" name="email" id="email">
+		<br>
+		<br>
+		<label for="subject">Subject</label>
+		<br>
+		<input type="text" name="subject" id="subject">
+		<br>
+		<br>
+		<label for="query">Your Query</label>
+		<br>
+		<textarea name="query" id="query"></textarea>
+		<br>
+		<br>
+		<input type="submit" value="submit">
+
+	</form>
+
+</div> <!--.container-->
+<?php include "inc/scripts.php"; ?>
+
+</body>
+
+</html>
