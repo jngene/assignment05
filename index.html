@@ -3,32 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<title>IEEE ・ Institute of Electrical and Electronics Engineers</title>
+	<!--Bulma CSS Framework cdn-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+	<!--Font Awesome cnd-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<header>
-		<section>
-			<a href="index.html">
-				<img src="images/logo.png" alt="IEEE logo">
-			</a>
+	<header class = "navbar is-primary">
+		<section class = "container">
+			<div class = "navbar-brand">
+				<a class = "navbar-item" href="index.html"><img src="images/logo.png" alt="IEEE logo"></a>
+			</div>
 		</section>
 
-		<nav>
-			<ul>
-				<li>
-					<a href="history.html">About IEEE</a>
-				</li>
-				<li>
-					<a href="ur.html">UofR Chapter</a>
-				</li>
-				<li>
-					<a href="rochester.html">Rochester Section</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact Us</a>
-				</li>
-			</ul>	
-		</nav>	
+		<div id = "navMenu" class = "navbar-menu">
+			<div class = "navbar-end">
+						<a href="history.html">About IEEE</a>
+
+						<a href="ur.html">UofR Chapter</a>
+
+						<a href="rochester.html">Rochester Section</a>
+
+						<a href="contact.html">Contact Us</a>
+			</div>		
+		</div>	
 	</header>
 
 	<main>
@@ -45,5 +44,15 @@
 		© 2019 Institute of Electrical and Electronics Engineers
 	</footer>
 
+	<script>
+		(function() {
+			var burger = document.querySelector('.burger');
+			var nav = document.querySelector('#'+burger.dataset.target);
+			burger.addEventListener('click', function() {
+				burger.classList.toggle('is-active');
+				nav.classList.toggle('is-active');
+			});
+		})();
+	</script>
 </body>
 </html>
