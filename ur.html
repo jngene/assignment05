@@ -8,40 +8,36 @@
 	<!--Font Awesome cnd-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-	<header>
-		<section>
-			<a href="index.html">
-				<img src="images/logo.png" alt="IEEE logo">
-			</a>
-		</section>
 
-		<h1>University of Rochester Chapter</h1>
-
-		<nav>
-			<ul>
-				<li>
-					<a href="history.html">About IEEE</a>
-				</li>
-				<li>
-					<a href="ur.html">UofR Chapter</a>
-				</li>
-				<li>
-					<a href="rochester.html">Rochester Section</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact Us</a>
-				</li>
-			</ul>	
-		</nav>	
-	</header>
-
+<body class="has-background-light">
+		<nav class="navbar is-primary">
+				<div class="container">
+					<div class="navbar-brand">
+						<a class="navbar-item" href="index.html" style="font-weight:bold;">
+							<img src="images/logo.png" alt="IEEE logo">
+						</a>
+						<span class="navbar-burger burger" data-target="navMenu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+					<div id="navMenu" class="navbar-menu">
+						<div class="navbar-end">
+							<a href="history.html" class="navbar-item">About IEEE</a>
+							<a href="ur.html" class="navbar-item is-active">UofR Chapter</a>
+							<a href="rochester.html" class="navbar-item">Rochester Section</a>
+							<a href="contact.html" class="navbar-item">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</nav>
 	<main>
 		<figure class = "box1">
 			<img src="images/ur-ieee.jpg" alt="UR Chapter celebrating IEEE day">
 		</figure>
 		<section>
-			<h2>Mission & Vision</h2>
+			<h2 class="subtitle is-4">Mission & Vision</h2>
 			<p>
 				IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.
 			</p>
@@ -53,7 +49,7 @@
 			</p>
 		</section>
 		<section>
-			<h2>Upcoming Events</h2>
+			<h2 class="subtitle is-4">Upcoming Events</h2>
 			<ul>
 				<li>
 					<h3>Career Center Advising</h3>
@@ -73,7 +69,7 @@
 			</ul>
 		</section>
 		<section>
-			<h2>Past Events</h2>
+			<h2 class="subtitle is-4">Past Events</h2>
 			<ul>
 				<li>
 					<h3>Robotics Panel</h3>
@@ -116,13 +112,34 @@
 		</aside>
 	</main>
 
-	<footer>
-		<form method="post" action="#" id="subscription-form">
-	    <label for="email"></label>
-	    <input type="text" name="email" id="email" placeholder="Enter your email">
-	    <button type="submit" name="submit" value="Subscribe">Join us</button>
-	    </form>
-	</footer>
+	<footer class="footer">
+			<form method="post" action="#" id="subscription-form">
+				<div class="field">
+					<label class="label">Email</label>
+					<div class="control">
+						<input class="input" type="email" placeholder="Email">
+					</div>
+				</div>
+	
+				<div class="field is-grouped">
+					<div class="control">
+						<button class="button is-link">Submit</button>
+					</div>
+				</div>
+			</form>
+			© 2019 Institute of Electrical and Electronics Engineers
+		</footer>
+
+		<script type="text/javascript">
+			(function () {
+				var burger = document.querySelector('.burger');
+				var nav = document.querySelector('#' + burger.dataset.target);
+				burger.addEventListener('click', function () {
+					burger.classList.toggle('is-active');
+					nav.classList.toggle('is-active');
+				});
+			})();
+		</script>
 
 </body>
 </html>

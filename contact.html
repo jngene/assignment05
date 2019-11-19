@@ -8,34 +8,29 @@
 	<!--Font Awesome cnd-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-	<header>
-		<section>
-			<a href="index.html">
-				<img src="images/logo.png" alt="IEEE logo">
-			</a>
-		</section>
-
-		<h1>Contact US</h1>
-
-		<nav>
-			<ul>
-				<li>
-					<a href="history.html">About IEEE</a>
-				</li>
-				<li>
-					<a href="ur.html">UofR Chapter</a>
-				</li>
-				<li>
-					<a href="rochester.html">Rochester Section</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact Us</a>
-				</li>
-			</ul>	
-		</nav>	
-	</header>
-
+<body class="has-background-light">
+		<nav class="navbar is-primary">
+				<div class="container">
+					<div class="navbar-brand">
+						<a class="navbar-item" href="index.html" style="font-weight:bold;">
+							<img src="images/logo.png" alt="IEEE logo">
+						</a>
+						<span class="navbar-burger burger" data-target="navMenu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+					<div id="navMenu" class="navbar-menu">
+						<div class="navbar-end">
+							<a href="history.html" class="navbar-item">About IEEE</a>
+							<a href="ur.html" class="navbar-item">UofR Chapter</a>
+							<a href="rochester.html" class="navbar-item">Rochester Section</a>
+							<a href="contact.html" class="navbar-item  is-active">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</nav>
 	<figure class = "box1">
 			<img src="images/ieee-experience.jpg" alt="IEEE header picture">
 	</figure>
@@ -43,29 +38,36 @@
 	<div id="form-wrapper">
 		<form method="post" action="#" id="contact-form">
 
-		<label for="name">Name</label>
-		<br>
-		<input type="text" name="name" id="name">
-		<br>
-		<br>
-		<label for="email">Email</label>
-		<br>
-		<input type="email" name="email" id="email">
-		<br>
-		<br>
-		<label for="subject">Subject</label>
-		<br>
-		<input type="text" name="subject" id="subject">
-		<br>
-		<br>
-		<label for="query">Your Query</label>
-		<br>
-		<textarea name="query" id="query"></textarea>
-		<br>
-		<br>
-		<input type="submit" name="submit" value="Submit">
+				<div class="field">
+						<label class="label">Name</label>
+						<div class="control">
+						  <input class="input" type="text" placeholder="Name">
+						</div>
+					  </div>
+					  
+					  <div class="field">
+						<label class="label">Email</label>
+						<div class="control">
+						  <input class="input" type="email" placeholder="Email" value="">
+						</div>
+					  </div>
+					  
+					  <div class="field">
+						<label class="label">Message</label>
+						<div class="control">
+						  <textarea class="textarea" placeholder="What's up?"></textarea>
+						</div>
+					  </div>
+					  
+					  <div class="field is-grouped">
+						<div class="control">
+						  <button class="button is-link">Submit</button>
+						</div>
+					  </div>
 
 		</form>
+
+		
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -84,6 +86,17 @@
 		});
 	</script>
 	
+	<script type="text/javascript">
+		(function () {
+			var burger = document.querySelector('.burger');
+			var nav = document.querySelector('#' + burger.dataset.target);
+			burger.addEventListener('click', function () {
+				burger.classList.toggle('is-active');
+				nav.classList.toggle('is-active');
+			});
+		})();
+	</script>
+
 </body>
 
 </html>
