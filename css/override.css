@@ -19,6 +19,8 @@ section {
 aside {
     padding: 25px;
 }
+
+
 /*Containers*/
 .container {
 	margin: 0px auto;
@@ -29,11 +31,10 @@ aside {
 /*Header*/
 h1 {
     margin-top: 50px;
-}
-
-h1, h2 {
     margin-left: 25px;
 }
+
+h2{margin-left: 25px;}
 
 h3 {
     font-weight: bold;
@@ -73,7 +74,6 @@ h3 {
     position: absolute;
     width: 100%;
     grid-column: 1 / 4;
-	text-align: right;
 }
 
 /*States*/
