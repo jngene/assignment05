@@ -40,31 +40,35 @@
 		<form method="post" action="#" id="contact-form">
 
 				<div class="field">
-						<label class="label">Name</label>
-						<div class="control">
-						  <input class="input" type="text" placeholder="Name">
-						</div>
-					  </div>
-					  
-					  <div class="field">
-						<label class="label">Email</label>
-						<div class="control">
-						  <input class="input" type="email" placeholder="Email" value="">
-						</div>
-					  </div>
-					  
-					  <div class="field">
-						<label class="label">Message</label>
-						<div class="control">
-						  <textarea class="textarea" placeholder="What's up?"></textarea>
-						</div>
-					  </div>
-					  
-					  <div class="field is-grouped">
-						<div class="control">
-						  <button class="button is-link">Submit</button>
-						</div>
-					  </div>
+					<label class="label" for="name">Name</label>
+					<div class="control">
+					  <input class="input" type="text" name="name" id="name" placeholder="Name">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label" for="email">Email</label>
+					<div class="control">
+					  <input class="input" type="email" name="email" id="email" placeholder="Email">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label" for="subject">Subject</label>
+					<div class="control">
+					  <input class="input" type="text" name="subject" id="subject" placeholder="Subject">
+					</div>
+				</div>  
+				<div class="field">
+					<label class="label">Query</label>
+					<div class="control">
+					  <textarea class="textarea" name="query" id="query" placeholder="What can we help you with?"></textarea>
+					</div>
+				</div>	  
+				<div class="field is-grouped">
+					<div class="control">
+						<input type="submit" name="submit" value="Submit">
+					  <button class="button is-link">Submit</button>
+					</div>
+				</div>
 
 		</form>
 
@@ -80,14 +84,14 @@
 				url: "new.php",
 				data: formData,
 				success: function(data){
-					$("#form-wrapper").html("Thank you for contact us!");
+					$("#form-wrapper").html("Thank you for contacting us!");
 				}
 			});
 			e.preventDefault();
 		});
 	</script>
 	
-	<script type="text/javascript">
+	<script>
 		(function () {
 			var burger = document.querySelector('.burger');
 			var nav = document.querySelector('#' + burger.dataset.target);
