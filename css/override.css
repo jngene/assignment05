@@ -1,0 +1,79 @@
+/*Base*/
+
+main img,  .box1 img{
+ width: 100%; 
+ height: 500px;
+ padding: 25px;
+
+}
+
+
+/*
+Layout
+*/
+
+section {
+    padding: 25px;
+}
+
+aside {
+    padding: 25px;
+}
+
+
+/*Containers*/
+.container {
+	margin: 0px auto;
+	width: 95%;
+	max-width: 1100px;
+	display: grid;
+}
+/*Header*/
+h1 {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+h2{margin-left: 25px;}
+
+h3 {
+    font-weight: bold;
+}
+/*Subscribe form*/
+.landing-form {
+    position: fixed;
+    bottom: 100px;
+    right: 55px;
+    margin-right: 30px;
+    width: 300px;
+}
+
+.form {
+    bottom: 100px;
+    right: 55px;
+    margin-right: 30px;
+    width: 300px;
+}
+
+#contact-form-wrapper {
+    padding: 25px;
+}
+
+/*Footer*/
+.footer-landing {
+    padding: 2rem 1rem 2rem !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    grid-column: 1 / 4;
+	text-align: right;
+}
+
+.footer {
+    padding: 2rem 1rem 2rem !important;
+    position: absolute;
+    width: 100%;
+    grid-column: 1 / 4;
+}
+
+/*States*/

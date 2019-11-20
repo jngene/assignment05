@@ -3,47 +3,74 @@
 <head>
 	<meta charset="utf-8">
 	<title>IEEE ・ Institute of Electrical and Electronics Engineers</title>
+	<!--Bulma CSS Framework cdn-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+	<link rel="stylesheet" href="css/override.css">
+	<!--Font Awesome cnd-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-	<header>
-		<section>
-			<a href="index.html">
-				<img src="images/logo.png" alt="IEEE logo">
-			</a>
-		</section>
-
-		<nav>
-			<ul>
-				<li>
-					<a href="history.html">About IEEE</a>
-				</li>
-				<li>
-					<a href="ur.html">UofR Chapter</a>
-				</li>
-				<li>
-					<a href="rochester.html">Rochester Section</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact Us</a>
-				</li>
-			</ul>	
-		</nav>	
-	</header>
+<body class = "has-background-light">
+		<nav class="navbar is-primary">
+				<div class="container">
+				  <div class="navbar-brand">
+					<a class="navbar-item" href="index.html" style="font-weight:bold;">
+							<img src="images/logo.png" alt="IEEE logo">
+					</a>
+					<span class="navbar-burger burger" data-target="navMenu">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</span>
+				  </div>
+				  <div id="navMenu" class="navbar-menu">
+					<div class="navbar-end">
+					  <a href="history.html" class="navbar-item">About IEEE</a>
+					  <a href="ur.html" class="navbar-item">UofR Chapter</a>
+					  <a href="rochester.html" class="navbar-item">Rochester Section</a>
+					  <a href="contact.html" class="navbar-item">Contact Us</a>
+					</div>
+				  </div>
+				</div>
+			  </nav>
+			  
 
 	<main>
-		<h1>Institute of Electrical and Electronics Engineers</h1>
-		<h2>Become a part of our vibrant community</h2>
-		<form method="post" action="#" id="subscription-form">
-	    <label for="email"></label>
-	    <input type="text" name="email" id="email" placeholder="Enter your email">
-	    <button type="submit" name="submit" value="Subscribe">Join us</button>
-	    </form>
+		<h1 class = "title is-2">Institute of Electrical and Electronics Engineers</h1>
+		<h2 class = "subtitle is-4">Become a part of our vibrant community</h2>
+		<div class = "landing-form">
+			<form method="post" action="#" id="subscription-form">
+					<div class="field">
+							<label class="label">Subscribe!</label>
+							<div class="control">
+							<input class="input" type="email" placeholder="Email">
+							</div>
+						</div>	
+			
+						<div class="field is-grouped">
+								<div class="control">
+								<button class="button is-link">Submit</button>
+								</div>
+							</div>
+			</form>
+		</div>
+			
 	</main>
 
-	<footer>
+	<footer class="footer-landing">
 		© 2019 Institute of Electrical and Electronics Engineers
 	</footer>
+
+	<script type="text/javascript">
+		(function() {
+		  var burger = document.querySelector('.burger');
+		  var nav = document.querySelector('#'+burger.dataset.target);
+		  burger.addEventListener('click', function(){
+			burger.classList.toggle('is-active');
+			nav.classList.toggle('is-active');
+		  });
+		})();
+	  </script>
 
 </body>
 </html>
