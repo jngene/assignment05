@@ -28,6 +28,9 @@ include "inc/head.inc";
 	<figure class = "box1">
 			<img src="images/ieee-experience.jpg" alt="IEEE header picture">
 	</figure>
+	
+	<h1>Contact Us</h1>
+	<p>If you want to become a member or you have any questions about IEEE, please fill the form below. We will get back to you as soon as we can.</p>
 
 	<div id="contact-form-wrapper">
 		<form method="post" action="#" id="contact-form">
@@ -35,23 +38,17 @@ include "inc/head.inc";
 				<div class="field">
 					<label class="label" for="name">Name</label>
 					<div class="control">
-					  <input class="input" type="text" name="name" id="name" placeholder="Name">
+					  <input class="input" type="text" name="name" id="name">
 					</div>
 				</div>
 				<div class="field">
 					<label class="label" for="email">Email</label>
 					<div class="control">
-					  <input class="input" type="email" name="email" id="email" placeholder="Email">
+					  <input class="input" type="email" name="email" id="email">
 					</div>
 				</div>
 				<div class="field">
-					<label class="label" for="subject">Subject</label>
-					<div class="control">
-					  <input class="input" type="text" name="subject" id="subject" placeholder="Subject">
-					</div>
-				</div>  
-				<div class="field">
-					<label class="label">Query</label>
+					<label class="label">Message</label>
 					<div class="control">
 					  <textarea class="textarea" name="query" id="query" placeholder="What can we help you with?"></textarea>
 					</div>
