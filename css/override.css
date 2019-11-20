@@ -7,15 +7,25 @@ Layout
 /*Containers*/
 
 /*Header*/
-.h1 {
-    margin-top: 10px;
+h1 {
+    margin-top: 25px;
+}
+
+h1, h2 {
+    margin-left: 25px;
 }
 /*Landing page*/
 
 /*Meetups sections*/
 
 /*Subscribe form*/
+.landing-form {
+    margin-top: 100px;
+}
 
+.input {
+    width: 250px;
+}
 /*Footer*/
 
 /*States*/
