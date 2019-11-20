@@ -65,18 +65,8 @@ h3 {
     width: 300px;
 }
 
-.form-element {
-    padding-top: 10px;
-    text-align: center;
-}
-
-.form-element input {
-    width: 150px;
-}
-
 #contact-form-wrapper {
-    padding: 10px;
-    margin-bottom: 25px;
+    padding: 25px;
 }
 
 /*Footer*/
