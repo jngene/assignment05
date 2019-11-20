@@ -25,13 +25,14 @@ include "inc/head.inc";
 				</div>
 			</div>
 		</nav>
-	<figure class = "box1">
-			<img src="images/ieee-experience.jpg" alt="IEEE header picture">
-	</figure>
 	
 	<h1>Contact Us</h1>
 	<p>If you want to become a member or you have any questions about IEEE, please fill the form below. We will get back to you as soon as we can.</p>
 
+	<figure class = "box1">
+			<img src="images/ieee-experience.jpg" alt="IEEE header picture">
+	</figure>
+	
 	<div id="contact-form-wrapper">
 		<form method="post" action="#" id="contact-form">
 
