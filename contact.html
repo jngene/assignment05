@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>IEEE ・ About Us</title>
@@ -9,88 +10,83 @@
 	<!--Font Awesome cnd-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-		<nav class="navbar is-primary">
-				<div class="container">
-					<div class="navbar-brand">
-						<a class="navbar-item" href="index.html" style="font-weight:bold;">
-							<img src="images/logo.png" alt="IEEE logo">
-						</a>
-						<span class="navbar-burger burger" data-target="navMenu">
-							<span></span>
-							<span></span>
-							<span></span>
-						</span>
-					</div>
-					<div id="navMenu" class="navbar-menu">
-						<div class="navbar-end">
-							<a href="history.html" class="navbar-item">About IEEE</a>
-							<a href="ur.html" class="navbar-item">UofR Chapter</a>
-							<a href="rochester.html" class="navbar-item">Rochester Section</a>
-							<a href="contact.html" class="navbar-item  is-active">Contact Us</a>
-						</div>
-					</div>
+	<nav class="navbar is-primary">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html" style="font-weight:bold;">
+					<img src="images/logo.png" alt="IEEE logo">
+				</a>
+				<span class="navbar-burger burger" data-target="navMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+			<div id="navMenu" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="history.html" class="navbar-item">About IEEE</a>
+					<a href="ur.html" class="navbar-item">UofR Chapter</a>
+					<a href="rochester.html" class="navbar-item">Rochester Section</a>
+					<a href="contact.html" class="navbar-item  is-active">Contact Us</a>
 				</div>
-			</nav>
-	<figure class = "box1">
-			<img src="images/ieee-experience.jpg" alt="IEEE header picture">
+			</div>
+		</div>
+	</nav>
+	<figure class="box1">
+		<img src="images/ieee-experience.jpg" alt="IEEE header picture">
 	</figure>
 
 	<div id="contact-form-wrapper">
 		<form method="post" action="#" id="contact-form">
+			<div class="form-element">
+				<label for="name">Name</label>
+			</div>
+			<div class="form-element"> <input type="text" name="name" id="name"></div>
+			<div class="form-element">
+				<label for="email">Email</label>
+			</div>
+			<div class="form-element"> <input type="email" name="email" id="email"></div>
+			<div class="form-element">
+				<label for="subject">Subject</label>
+				
+			</div>
+			<div class="form-element"> <input type="text" name="subject" id="subject"></div>
+			<div class="form-element">
+				<label for="query">Your Query</label>
+				
+			</div>
+			<div class="form-element"><textarea name="query" id="query"></textarea></div>
+			<div class="form-element">
+				<input type="submit" name="submit" value="Submit">
+			</div>
 
-				<div class="field">
-					<label class="label" for="name">Name</label>
-					<div class="control">
-					  <input class="input" type="text" name="name" id="name" placeholder="Name">
-					</div>
-				</div>
-				<div class="field">
-					<label class="label" for="email">Email</label>
-					<div class="control">
-					  <input class="input" type="email" name="email" id="email" placeholder="Email">
-					</div>
-				</div>
-				<div class="field">
-					<label class="label" for="subject">Subject</label>
-					<div class="control">
-					  <input class="input" type="text" name="subject" id="subject" placeholder="Subject">
-					</div>
-				</div>  
-				<div class="field">
-					<label class="label">Query</label>
-					<div class="control">
-					  <textarea class="textarea" name="query" id="query" placeholder="What can we help you with?"></textarea>
-					</div>
-				</div>	  
-				<div class="field is-grouped">
-					<div class="control">
-						<input type="submit" name="submit" value="Submit">
-					  <button class="button is-link">Submit</button>
-					</div>
-				</div>
+
+
 
 		</form>
+	</div>
 
-		
+
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script>
-		$("#contact-form").submit(function(e) {
+		$("#contact-form").submit(function (e) {
 			var formData = $("#contact-form").serialize();
 			$.ajax({
 				type: 'POST',
 				url: "new.php",
 				data: formData,
-				success: function(data){
+				success: function (data) {
 					$("#form-wrapper").html("Thank you for contacting us!");
 				}
 			});
 			e.preventDefault();
 		});
 	</script>
-	
+
 	<script>
 		(function () {
 			var burger = document.querySelector('.burger');
