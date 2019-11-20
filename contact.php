@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>IEEE ・ About Us</title>
-	<!--Bulma CSS Framework-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
-	<link rel="stylesheet" href="css/override.css">
-	<!--Font Awesome cnd-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<?php 
+$currentPage = "IEEE ・ Contact Us";
+include "inc/head.inc";
+?>
 <body>
 		<nav class="navbar is-primary">
-				<div class="container">
-					<div class="navbar-brand">
-						<a class="navbar-item" href="index.html" style="font-weight:bold;">
-							<img src="images/logo.png" alt="IEEE logo">
-						</a>
-						<span class="navbar-burger burger" data-target="navMenu">
-							<span></span>
-							<span></span>
-							<span></span>
-						</span>
-					</div>
-					<div id="navMenu" class="navbar-menu">
-						<div class="navbar-end">
-							<a href="history.html" class="navbar-item">About IEEE</a>
-							<a href="ur.html" class="navbar-item">UofR Chapter</a>
-							<a href="rochester.html" class="navbar-item">Rochester Section</a>
-							<a href="contact.html" class="navbar-item  is-active">Contact Us</a>
-						</div>
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="index.php" style="font-weight:bold;">
+						<img src="images/logo.png" alt="IEEE logo">
+					</a>
+					<span class="navbar-burger burger" data-target="navMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+				<div id="navMenu" class="navbar-menu">
+					<div class="navbar-end">
+						<a href="history.php" class="navbar-item">About IEEE</a>
+						<a href="ur.php" class="navbar-item">UofR Chapter</a>
+						<a href="rochester.php" class="navbar-item">Rochester Section</a>
+						<a href="contact.php" class="navbar-item is-active">Contact Us</a>
 					</div>
 				</div>
-			</nav>
+			</div>
+		</nav>
 	<figure class = "box1">
 			<img src="images/ieee-experience.jpg" alt="IEEE header picture">
 	</figure>
@@ -65,8 +58,7 @@
 				</div>	  
 				<div class="field is-grouped">
 					<div class="control">
-						<input type="submit" name="submit" value="Submit">
-					  <button class="button is-link">Submit</button>
+					  <button class="button is-link" type="submit" name="submit">Submit</button>
 					</div>
 				</div>
 
@@ -84,7 +76,7 @@
 				url: "new.php",
 				data: formData,
 				success: function(data){
-					$("#form-wrapper").html("Thank you for contacting us!");
+					$("#contact-form-wrapper").html("Thank you for contacting us!");
 				}
 			});
 			e.preventDefault();
