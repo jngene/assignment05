@@ -10,6 +10,18 @@ main img,  .box1 img{
  margin-top: 50px;
 }
 
+.arch {
+    width: 900px;
+}
+
+.subtitle {
+    margin-left:25px;
+}
+
+.history-headers {
+    margin-left: 10px;
+}
+
 body { 
     width: 100vw;
     height: 100vh;
@@ -17,7 +29,7 @@ body {
 
 p {
     line-height: 25px;
-    padding: 10px;
+    padding-top: 10px;
 }
 /*
 Layout
@@ -25,7 +37,6 @@ Layout
 
 section {
     padding:35px;
-    padding-top: 75px;
 }
 
 aside {

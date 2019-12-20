@@ -43,7 +43,7 @@ include "inc/head.inc";
 						<h3>Advisor</h3>
 						<span>Thomas Howard</span>
 					</aside>
-			<img src="images/roc-section.jpg" alt="Rochester Section header picture">
+			<div class="arch"><img src="images/roc-section.jpg" alt="Rochester Section header picture"></div>
 		</figure>
 		<section>
 			<h2 class="subtitle is-4"> Mission & Vision</h2>
