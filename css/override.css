@@ -11,10 +11,10 @@ main img,  .box1 img{
 }
 
 .arch {
-    width: 900px;
+    width: 900px !important;
 }
 
-.subtitle {
+.subtitle-main-contact {
     margin-left: 25px !important;
 }
 

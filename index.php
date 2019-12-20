@@ -29,7 +29,7 @@ include "inc/head.inc";
 			  
 	<main>
 		<h1 class = "title is-2">Institute of Electrical and Electronics Engineers</h1>
-		<div class="subtitle"><h2 class = "subtitle is-4">Become a part of our vibrant community</h2></div>
+		<div class="subtitle-main-contact"><h2 class = "subtitle is-4">Become a part of our vibrant community</h2></div>
 
 		<div class="landing-photo"> 
 				<img src="images/cover.jpg" alt="Cover photo">
